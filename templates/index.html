@@ -10,7 +10,7 @@
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="static/css/style.css">
-
+{#<h1 class = "title">Web-разработчик</h1>#}
   </head>
   <body>
 		
@@ -23,14 +23,7 @@
 	        </button>
         </div>
 				<div class="p-4 pt-5">
-                     <style>
-        .imgsize{
-            width: 30%;
-            height:30%;
-            margin-left: 30%;
-            display: block;
-        }
-    </style>
+
 
 	        <ul class="list-unstyled components mb-5">
                     <a href="/"><img class="imgsize" src="{% static 'media/logo.png' %}"  alt=""></a>
@@ -54,23 +47,52 @@
 
 
 	        <div class="footer">
-	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  RTF &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  This site is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://vk.com/parcurcik" target="_blank">Pavel Bezborodov</a>
-						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        	<p>
+						  IRIT-RTF &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  This site was made <i class="icon-heart" aria-hidden="true"></i> by <a href="https://vk.com/parcurcik" target="_blank">Pavel Bezborodov</a>
+						  </p>
 	        </div>
 
 	      </div>
     	</nav>
 
-        <!-- Page Content  -->
+
       <div id="content" class="p-4 p-md-5 pt-5">
 
-        <h2 class="mb-4">Sidebar #02</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="mb-4">Описание профессии Web-разработчика</h2>
+        <p>Слово «веб-разработчик» кажется вполне понятным — очевидно же, что он разрабатывает что-то для веба. На деле всё не так просто. Современный интернет мало похож на веб девяностых или нулевых: технологий столько, что уследить за всем сразу просто нереально. Поэтому в профессии веб-разработчика есть три больших специализации:</p>
+         <ul>
+             <li>
+                 <p>Frontend-разработчик — программист, который создаёт интерфейс, видимую часть приложения. Она, как кассир в McDonald’s, берёт на себя общение с клиентом, принимает заказы. Когда мы заходим на сайты, мы обычно нажимаем на кнопки или отправляем товар в корзину. За всё это отвечает frontend. Нас не интересует, что там внутри, — главное, чтобы всё хорошо работало. Ну а если мобильная версия сайта по бокам вылезает за экран — виноват frontend-разработчик.
+             </li>
+             <li>
+                 <p>Backend-разработчик — отвечает за внутренности, серверную часть сайта. Как повар в McDonald’s, он принимает заказы от кассира, готовит и передаёт обратно на кассу. Если вы поставили галочку напротив «китайские чайники до 2 000 рублей», а сайт показал гаечные ключи — передайте привет backend-разработчику.</p>
+             </li>
+             <li>
+                 Fullstack-разработчик — многостаночник, который умеет и backend, и frontend. Как хозяин небольшого кафе, который принимает заказы, готовит и разносит еду. Делает он всё немного медленнее, а навыки до идеала прокачать сложно. Зато в курсе всех процессов — от и до. Опытные разработчики говорят, что в fullstack проще прийти из backend.
+             </li>
+         </ul>
+          <p>Таким образом, веб-разработчик создаёт сайты, сервисы и приложения, которыми мы ежедневно пользуемся. Он разрабатывает интернет-магазины, онлайн-банки, поисковики, карты и почтовые клиенты. Веб-разработчик проектирует внешний вид сайта — фронтенд и программирует сервисную часть — бэкенд.</p>
+          <p>Для того чтобы работать web-разработчиком, необходимо обладать определенными знаниями и навыками. Все требования, которые заказчики и работодатели предъявляют разработчикам, можно увидеть в описании вакансии. </p>
+          <p>Зарплата веб-разработчика, как и во многих других интернет-профессиях, зависит от уровня профессиональной подготовки, сложности проекта, объема и срочности работы,  опыта и желания работать.</p>
+          <img class="main_photo" src="{% static 'media/photo.png' %}"  alt="">
       </div>
 		</div>
-
+                         <style>
+        .imgsize{
+            width: 30%;
+            height:30%;
+            margin-left: 30%;
+            margin-top: -10%;
+            display: block;
+        }
+        .main_photo{
+            width: 60%;
+            height:60%;
+            display: block;
+            margin-left: 20%;
+            margin-top: -10%;
+        }
+    </style>
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/popper.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
