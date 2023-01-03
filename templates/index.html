@@ -10,7 +10,7 @@
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="static/css/style.css">
-{#<h1 class = "title">Web-разработчик</h1>#}
+
   </head>
   <body>
 		
@@ -23,6 +23,7 @@
 	        </button>
         </div>
 				<div class="p-4 pt-5">
+                    <img class="notice" src="{% static 'media/notice.svg' %}"  alt="">
 
 
 	        <ul class="list-unstyled components mb-5">
@@ -31,16 +32,16 @@
 	            <a href="/">Главная</a>
 	          </li>
 	          <li>
-	              <a href="#">Востребованность</a>
+	              <a href="{% url 'demand' %}">Востребованность</a>
 	          </li>
 	          <li>
-              <a href="#">География</a>
+             <a href="{% url 'geography' %}">География</a>
 	          </li>
 	          <li>
-              <a href="#">Навыки</a>
+              <a href="{% url 'skills' %}">Навыки</a>
 	          </li>
                 <li>
-              <a href="#">Последние вакансии</a>
+              <a href="{% url 'last_vacancies' %}">Последние вакансии</a>
 	          </li>
 	        </ul>
 
@@ -48,7 +49,7 @@
 
 	        <div class="footer">
 	        	<p>
-						  IRIT-RTF &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  This site was made <i class="icon-heart" aria-hidden="true"></i> by <a href="https://vk.com/parcurcik" target="_blank">Pavel Bezborodov</a>
+						  IRIT-RTF &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  This site was made <i class="icon-heart" aria-hidden="true"></i> by <a href="https://vk.com/parcurcik" target="_blank">Pavel Bezborodov <br>RI-210945</a>
 						  </p>
 	        </div>
 
@@ -74,25 +75,10 @@
           <p>Таким образом, веб-разработчик создаёт сайты, сервисы и приложения, которыми мы ежедневно пользуемся. Он разрабатывает интернет-магазины, онлайн-банки, поисковики, карты и почтовые клиенты. Веб-разработчик проектирует внешний вид сайта — фронтенд и программирует сервисную часть — бэкенд.</p>
           <p>Для того чтобы работать web-разработчиком, необходимо обладать определенными знаниями и навыками. Все требования, которые заказчики и работодатели предъявляют разработчикам, можно увидеть в описании вакансии. </p>
           <p>Зарплата веб-разработчика, как и во многих других интернет-профессиях, зависит от уровня профессиональной подготовки, сложности проекта, объема и срочности работы,  опыта и желания работать.</p>
-          <img class="main_photo" src="{% static 'media/photo.png' %}"  alt="">
+          <img class="main_photo" src="{% static 'media/mainph.jpg' %}"  alt="">
       </div>
 		</div>
-                         <style>
-        .imgsize{
-            width: 30%;
-            height:30%;
-            margin-left: 30%;
-            margin-top: -10%;
-            display: block;
-        }
-        .main_photo{
-            width: 60%;
-            height:60%;
-            display: block;
-            margin-left: 20%;
-            margin-top: -10%;
-        }
-    </style>
+
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/popper.js"></script>
     <script src="static/js/bootstrap.min.js"></script>

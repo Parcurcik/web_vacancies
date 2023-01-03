@@ -8162,7 +8162,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #866ec7; }
+  color: rgba(255, 255, 255, 0.5); }
   a:hover, a:focus {
     text-decoration: none !important;
     outline: none !important;
@@ -8228,7 +8228,7 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #866ec7;
+  background: #34ce57;
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8290,11 +8290,11 @@ h1, h2, h3, h4, h5,
       height: 40px;
       border-radius: 50%; }
       #sidebar .custom-menu .btn.btn-primary {
-        background: #6749b9;
-        border-color: #6749b9; }
+        background: #34ce57;
+        border-color: #34ce57; }
         #sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
-          background: #6749b9 !important;
-          border-color: #6749b9 !important; }
+          background: #34ce57 !important;
+          border-color: #34ce57 !important; }
 
 a[data-toggle="collapse"] {
   position: relative; }
@@ -8321,14 +8321,16 @@ a[data-toggle="collapse"] {
   transition: all 0.3s; }
 
 .btn.btn-primary {
-  background: #866ec7;
-  border-color: #866ec7; }
+  background: #34ce57;
+  border-color: #34ce57; }
   .btn.btn-primary:hover, .btn.btn-primary:focus {
-    background: #866ec7 !important;
-    border-color: #866ec7 !important; }
+    background: #34ce57 !important;
+    border-color: #34ce57 !important; }
 
 .footer p {
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  text-align: left;
+}
 
 .form-control {
   height: 40px !important;
@@ -8353,3 +8355,20 @@ a[data-toggle="collapse"] {
   .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: rgba(0, 0, 0, 0.3); }
+  .imgsize{
+            width: 30%;
+            height:30%;
+            margin-left: 32%;
+            margin-top: 1%;
+            display: block;
+        }
+        .main_photo{
+            width: 70%;
+            height: 50%;
+            display: block;
+            margin-left: 20%;
+        }
+        .notice{
+            width: 100%;
+            height: 100%;
+        }
