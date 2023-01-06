@@ -11704,10 +11704,16 @@ a[data-toggle="collapse"] {
 }
 
 .main_photo {
-    width: 70%;
-    height: 50%;
+    width: 36%;
+    height: 36%;
     display: block;
-    margin-left: 20%;
+    margin-left: 0%;
+    border-radius: 20%;
+    border: 2px solid #34ce57;
+    display: flex;
+    float: right;
+
+
 }
 
 .notice {
@@ -11741,5 +11747,214 @@ a[data-toggle="collapse"] {
     line-height: 26px;
     text-indent: 30px;
     margin: 0;
+}
+
+#content ul {
+    list-style: none;
+
+}
+#left_content p{
+    text-align: right;
+    float:left;
+    display: inline-block;
+    margin: 500px;
+}
+
+#senya{
+    margin-top: 80px;
+}
+
+
+#name  {
+    text-align: center;
+    margin-top: 400px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hide,
+.hide + label ~ div {
+    display: none;
+    text-align: center;
+}
+.hide + label {
+    margin: 0;
+    padding: 0;
+    color: #bbc3c8;
+    cursor: pointer;
+    display: inline-block;
+}
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+.hide:checked + label + div {
+    display: block;
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    margin-left: 20px;
+    padding: 10px;
+     -webkit-animation:fade ease-in 0.5s;
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s;
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+.hide + label:before {
+    background-color: #34ce57;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}
+#professions{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hide2,
+.hide2 + label ~ div {
+    display: none;
+    text-align: center;
+}
+.hide2 + label {
+    margin: 0;
+    padding: 0;
+    color: #bbc3c8;
+    cursor: pointer;
+    display: inline-block;
+}
+.hide2:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+.hide2:checked + label + div {
+    display: block;
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    margin-left: 20px;
+    padding: 10px;
+     -webkit-animation:fade ease-in 0.5s;
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s;
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+.hide2 + label:before {
+    background-color: #34ce57;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide2:checked + label:before {
+    content: "\2212";
+}
+
+.hide3,
+.hide3 + label ~ div {
+    display: none;
+    text-align: center;
+}
+.hide3 + label {
+    margin: 0;
+    padding: 0;
+    color: #bbc3c8;
+    cursor: pointer;
+    display: inline-block;
+}
+.hide3:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+.hide3:checked + label + div {
+    display: block;
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    margin-left: 20px;
+    padding: 10px;
+     -webkit-animation:fade ease-in 0.5s;
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s;
+}
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+.hide3 + label:before {
+    background-color: #34ce57;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide3:checked + label:before {
+    content: "\2212";
 }
 

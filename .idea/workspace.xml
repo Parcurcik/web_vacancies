@@ -7,6 +7,7 @@
     <list default="true" id="17ad5cb0-c0cf-4a59-be7c-3cab97f88e26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/mainph.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/media/mainph.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/demand.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/demand.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/geography.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/geography.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
@@ -17,6 +18,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,6 +106,10 @@
       <workItem from="1672833750325" duration="1002000" />
       <workItem from="1672835645211" duration="35000" />
       <workItem from="1672854932614" duration="4279000" />
+      <workItem from="1672930559616" duration="572000" />
+      <workItem from="1672939824559" duration="599000" />
+      <workItem from="1672985546063" duration="5578000" />
+      <workItem from="1673025774404" duration="2256000" />
     </task>
     <servers />
   </component>
