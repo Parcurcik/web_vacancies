@@ -11704,15 +11704,14 @@ a[data-toggle="collapse"] {
 }
 
 .main_photo {
-    width: 36%;
-    height: 36%;
+    width: 25%;
+    height: 25%;
     display: block;
-    margin-left: 0%;
     border-radius: 20%;
     border: 2px solid #34ce57;
     display: flex;
-    float: right;
-
+    margin: 0 auto;
+    margin-top: 10px;
 
 }
 
@@ -11747,6 +11746,7 @@ a[data-toggle="collapse"] {
     line-height: 26px;
     text-indent: 30px;
     margin: 0;
+
 }
 
 #content ul {
@@ -11762,6 +11762,7 @@ a[data-toggle="collapse"] {
 
 #senya{
     margin-top: 80px;
+
 }
 
 
