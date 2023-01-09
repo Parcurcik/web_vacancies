@@ -1,78 +1,185 @@
 <!doctype html>
 <html lang="ru">
 {% load static %}
-  <head>
-  	<title>Главная</title>
+<head>
+    <title>Востребованность</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} ">
 
 
+</head>
+<body id="bg" style="background-image: url('{% static "media/back.png" %}')" ;>
 
-  </head>
-  <body id="bg" style="background-image: url('{% static "media/back.png"%}')";>
-
-		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
-	          <i class="fa fa-bars"></i>
-	          <span class="sr-only">Toggle Menu</span>
-	        </button>
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+        <div class="custom-menu">
         </div>
-				<div class="p-4 pt-5">
-                    <img class="notice" src="{% static 'media/notice.svg' %}"  alt="">
+        <div class="p-4 pt-5">
+            <img class="notice" src="{% static 'media/notice.svg' %}" alt="">
 
 
-	        <ul class="list-unstyled components mb-5">
-                    <a href="/"><img class="imgsize" src="{% static 'media/logo.png' %}"  alt=""></a>
-	          <li>
-	            <a href="/">Главная</a>
-	          </li>
-	          <li class="active">
-	               <a href="{% url 'demand' %}">Востребованность</a>
-	          </li>
-	          <li>
-               <a href="{% url 'geography' %}">География</a>
-	          </li>
-	          <li>
-              <a href="{% url 'skills' %}">Навыки</a>
-	          </li>
+            <ul class="list-unstyled components mb-5">
+                <a href="/"><img class="imgsize" src="{% static 'media/logo.png' %}" alt=""></a>
                 <li>
-              <a href="{% url 'last_vacancies' %}">Последние вакансии</a>
-	          </li>
-	        </ul>
+                    <a href="/">Главная</a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'demand' %}">Востребованность</a>
+                </li>
+                <li>
+                    <a href="{% url 'geography' %}">География</a>
+                </li>
+                <li>
+                    <a href="{% url 'skills' %}">Навыки</a>
+                </li>
+                <li>
+                    <a href="{% url 'last_vacancies' %}">Последние вакансии</a>
+                </li>
+            </ul>
 
 
-
-	        <div class="footer">
-	        	<p>
-						  IRIT-RTF &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  This site was made <i class="icon-heart" aria-hidden="true"></i> by <a href="https://vk.com/parcurcik" target="_blank">Pavel Bezborodov</a>
-						  </p>
+            <div class="footer">
+                <p>
+                    IRIT-RTF &copy;<script>document.write(new Date().getFullYear());</script>
+                    All rights reserved This site was made <i class="icon-heart" aria-hidden="true"></i> by <a
+                        href="https://vk.com/parcurcik" target="_blank">Pavel Bezborodov</a>
+                </p>
                 <p id="name" class="info">Павел Безбородов <br>АТ-23 РИ-210945</p>
-	        </div>
+            </div>
 
-	      </div>
-    	</nav>
+        </div>
+    </nav>
 
 
-      <div id="content" class="p-4 p-md-5 pt-5">
+    <div id="content" class="p-4 p-md-5 pt-5">
 
         <h2 class="mb-4">Востребованность профессии Web-разработчика</h2>
 
+        <h3>Динамика уровня зарплат</h3>
+        <div class="mobile-table">
+            <table class="iksweb">
+                <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Средняя зарплата</th>
+                    <th>Средняя зарплата - Web-разработчик</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2015</td>
+                    <td>57.259 руб</td>
+                    <td>55.140 руб</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>67.729 руб</td>
+                    <td>61.604 руб</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>69.632 руб</td>
+                    <td>65.440 руб</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>91.804 руб</td>
+                    <td>70.870 руб</td>
+                </tr>
+                 <tr>
+                    <td>2019</td>
+                    <td>79.153 руб</td>
+                    <td>73.512 руб</td>
+                </tr>
+                     <tr>
+                    <td>2020</td>
+                    <td>75.569 руб</td>
+                    <td>72.973 руб</td>
+                </tr>
+                     <tr>
+                    <td>2021</td>
+                    <td>86.650 руб</td>
+                    <td>81.306 руб</td>
+                </tr>
+                     <tr>
+                    <td>2022</td>
+                    <td>102.513 руб</td>
+                    <td>94.479 руб</td>
+                </tr>
+                </tbody>
+            </table>
+            <img id="graph" src="{% static 'media/salary.png' %}"  alt="">
+        </div>
+         <h3>Динамика количества вакансий</h3>
+                <div class="mobile-table">
+            <table class="iksweb">
+                <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Количество вакансий	</th>
+                    <th>Количество вакансий - Web-разработчик</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>2015</td>
+                    <td>140.370</td>
+                    <td>74.235</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>433.740</td>
+                    <td>230.345</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>580.230</td>
+                    <td>305.058</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>877.170</td>
+                    <td>443.383</td>
+                </tr>
+                 <tr>
+                    <td>2019</td>
+                    <td>1.058.385</td>
+                    <td>536.860</td>
+                </tr>
+                     <tr>
+                    <td>2020</td>
+                    <td>1.308.735</td>
+                    <td>661.627</td>
+                </tr>
+                     <tr>
+                    <td>2021</td>
+                    <td>811.740</td>
+                    <td>404.210</td>
+                </tr>
+                     <tr>
+                    <td>2022</td>
+                    <td>255.450</td>
+                    <td>128.425</td>
+                </tr>
+                </tbody>
+            </table>
+            <img id="graph" src="{% static 'media/col.png' %}"  alt="">
+        </div>
 
-      </div>
-		</div>
-    <script src="{% static  "js/jquery.min.js" %}"></script>
-    <script src="{% static  "js/popper.js" %}"></script>
-    <script src="{% static  "js/bootstrap.min.js" %}"></script>
-        <script src="{% static  "js/main.js" %}"></script>
 
-  </body>
+    </div>
+</div>
+<script src="{% static  "js/jquery.min.js" %}"></script>
+<script src="{% static  "js/popper.js" %}"></script>
+<script src="{% static  "js/bootstrap.min.js" %}"></script>
+<script src="{% static  "js/main.js" %}"></script>
+
+</body>
 <footer>
 
 </footer>

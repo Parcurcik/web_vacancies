@@ -11607,7 +11607,7 @@ h1, h2, h3, h4, h5,
 }
 
 #sidebar .custom-menu .btn.btn-primary {
-    background: #34ce57;
+    background: #34ce53;
     border-color: #1b1e21;
 }
 
@@ -11703,7 +11703,8 @@ a[data-toggle="collapse"] {
     display: block;
 }
 
-.main_photo {
+
+#main_photo {
     width: 25%;
     height: 25%;
     display: block;
@@ -11721,10 +11722,10 @@ a[data-toggle="collapse"] {
 }
 
 #bg {
-    background-size: 1920px 1080px;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: top;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #content h2 {
@@ -11753,20 +11754,31 @@ a[data-toggle="collapse"] {
     list-style: none;
 
 }
-#left_content p{
+
+#content h3 {
+    color: #c9d0d4;
+    font-family: ‘Helvetica Neue’, sans-serif;
+    text-align: center;
+    margin-top: 2%;
+    font-style: italic;
+
+
+}
+
+#left_content p {
     text-align: right;
-    float:left;
+    float: left;
     display: inline-block;
     margin: 500px;
 }
 
-#senya{
+#senya {
     margin-top: 80px;
 
 }
 
 
-#name  {
+#name {
     text-align: center;
     margin-top: 400px;
     color: rgba(255, 255, 255, 0.8);
@@ -11777,6 +11789,7 @@ a[data-toggle="collapse"] {
     display: none;
     text-align: center;
 }
+
 .hide + label {
     margin: 0;
     padding: 0;
@@ -11784,10 +11797,12 @@ a[data-toggle="collapse"] {
     cursor: pointer;
     display: inline-block;
 }
+
 .hide:checked + label {
     color: red;
     border-bottom: 0;
 }
+
 .hide:checked + label + div {
     display: block;
     background: #efefef;
@@ -11796,22 +11811,38 @@ a[data-toggle="collapse"] {
     box-shadow: inset 3px 3px 10px #7d8e8f;
     margin-left: 20px;
     padding: 10px;
-     -webkit-animation:fade ease-in 0.5s;
-     -moz-animation:fade ease-in 0.5s;
-     animation:fade ease-in 0.5s;
+    -webkit-animation: fade ease-in 0.5s;
+    -moz-animation: fade ease-in 0.5s;
+    animation: fade ease-in 0.5s;
 }
+
 @-moz-keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 @-webkit-keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 @keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 .hide + label:before {
     background-color: #34ce57;
     color: #fff;
@@ -11829,10 +11860,12 @@ to { opacity: 1 }
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
+
 .hide:checked + label:before {
     content: "\2212";
 }
-#professions{
+
+#professions {
     margin-top: 10px;
     text-align: center;
 }
@@ -11842,6 +11875,7 @@ to { opacity: 1 }
     display: none;
     text-align: center;
 }
+
 .hide2 + label {
     margin: 0;
     padding: 0;
@@ -11849,10 +11883,12 @@ to { opacity: 1 }
     cursor: pointer;
     display: inline-block;
 }
+
 .hide2:checked + label {
     color: red;
     border-bottom: 0;
 }
+
 .hide2:checked + label + div {
     display: block;
     background: #efefef;
@@ -11861,22 +11897,38 @@ to { opacity: 1 }
     box-shadow: inset 3px 3px 10px #7d8e8f;
     margin-left: 20px;
     padding: 10px;
-     -webkit-animation:fade ease-in 0.5s;
-     -moz-animation:fade ease-in 0.5s;
-     animation:fade ease-in 0.5s;
+    -webkit-animation: fade ease-in 0.5s;
+    -moz-animation: fade ease-in 0.5s;
+    animation: fade ease-in 0.5s;
 }
+
 @-moz-keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 @-webkit-keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 @keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 .hide2 + label:before {
     background-color: #34ce57;
     color: #fff;
@@ -11894,6 +11946,7 @@ to { opacity: 1 }
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
+
 .hide2:checked + label:before {
     content: "\2212";
 }
@@ -11903,6 +11956,7 @@ to { opacity: 1 }
     display: none;
     text-align: center;
 }
+
 .hide3 + label {
     margin: 0;
     padding: 0;
@@ -11910,10 +11964,12 @@ to { opacity: 1 }
     cursor: pointer;
     display: inline-block;
 }
+
 .hide3:checked + label {
     color: red;
     border-bottom: 0;
 }
+
 .hide3:checked + label + div {
     display: block;
     background: #efefef;
@@ -11922,22 +11978,38 @@ to { opacity: 1 }
     box-shadow: inset 3px 3px 10px #7d8e8f;
     margin-left: 20px;
     padding: 10px;
-     -webkit-animation:fade ease-in 0.5s;
-     -moz-animation:fade ease-in 0.5s;
-     animation:fade ease-in 0.5s;
+    -webkit-animation: fade ease-in 0.5s;
+    -moz-animation: fade ease-in 0.5s;
+    animation: fade ease-in 0.5s;
 }
+
 @-moz-keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 @-webkit-keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 @keyframes fade {
-    from { opacity: 0; }
-to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
+
 .hide3 + label:before {
     background-color: #34ce57;
     color: #fff;
@@ -11955,7 +12027,61 @@ to { opacity: 1 }
     -moz-border-radius: 50%;
     border-radius: 50%;
 }
+
 .hide3:checked + label:before {
     content: "\2212";
 }
 
+table.iksweb {
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 60%;
+    max-width: 60%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+table.iksweb th {
+    font-weight: normal;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #34ce57;
+}
+
+table.iksweb td {
+    font-size: 13px;
+    color: #c9d0d4;
+}
+
+table.iksweb td, table.iksweb th {
+    white-space: pre-wrap;
+    padding: 10px 1px;
+    line-height: 10px;
+    vertical-align: middle;
+    border: 1px solid #34ce57;
+}
+
+table.iksweb tr:hover {
+    background-color: #c9d0d4
+}
+
+table.iksweb tr:hover td {
+    color: #000000;
+    cursor: default;
+}
+
+.mobile-table {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+#graph{
+    float: right;
+    margin-top: -18.7%;
+    width: 26%;
+    max-width: 26%;
+    height: 26%;
+    max-height: 26%;
+    border: 5px solid #34ce57;
+}

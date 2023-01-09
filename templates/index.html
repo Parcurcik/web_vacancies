@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet"  href="{{ STATIC_URL }}css/style.css">
-		<link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} ">
+
 
   </head>
   <body id="bg" style="background-image: url('{% static "media/back.png"%}')";>
@@ -18,10 +18,7 @@
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="custom-menu">
-					<button type="button" id="sidebarCollapse" class="btn btn-primary">
-	          <i class="fa fa-bars"></i>
-	          <span class="sr-only">Toggle Menu</span>
-	        </button>
+
         </div>
 				<div class="p-4 pt-5">
                     <img class="notice" src="{% static 'media/notice.svg' %}"  alt="">
@@ -64,7 +61,7 @@
           <h2 class="mb-4">Кто такой {{ item.title }}?</h2>
            {{ item.content|safe }}
 
-            <img class="main_photo" src="{{item.photo.url}}"  alt="">
+            <img id="main_photo" src="{{item.photo.url}}"  alt="">
           {% endfor %}
 
 
