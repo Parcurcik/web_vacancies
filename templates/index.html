@@ -1,78 +1,81 @@
 <!doctype html>
 <html lang="ru">
 {% load static %}
-  <head>
-  	<title>Главная</title>
+<head>
+    <title>Главная</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} ">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} ">
 
 
-  </head>
-  <body id="bg" style="background-image: url('{% static "media/back.png"%}')";>
-		
-		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="custom-menu">
+</head>
+<body id="bg" style="background-image: url('{% static "media/back.png" %}')" ;>
 
-        </div>
-				<div class="p-4 pt-5">
-                    <img class="notice" src="{% static 'media/notice.svg' %}"  alt="">
+<div class="wrapper d-flex align-items-stretch">
+    {% for nav in navigation_results_hone %}
+        <nav id="sidebar">
+            <div class="custom-menu">
 
-
-	        <ul class="list-unstyled components mb-5">
-                    <a href="/"><img class="imgsize" src="{% static 'media/logo.png' %}"  alt=""></a>
-	          <li class="active">
-	            <a href="/">Главная</a>
-	          </li>
-	          <li>
-	              <a href="{% url 'demand' %}">Востребованность</a>
-	          </li>
-	          <li>
-             <a href="{% url 'geography' %}">География</a>
-	          </li>
-	          <li>
-              <a href="{% url 'skills' %}">Навыки</a>
-	          </li>
-                <li>
-              <a href="{% url 'last_vacancies' %}">Последние вакансии</a>
-	          </li>
-	        </ul>
+            </div>
+            <div class="p-4 pt-5">
+                <img class="notice" src="{{ nav.title.url }}" alt="">
 
 
+                <ul class="list-unstyled components mb-5">
+                    <a href="/"><img class="imgsize" src="{{ nav.logo_field.url }}" alt=""></a>
+                    <li class="active">
+                        <a href="/">{{ nav.first_menu }}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'demand' %}">{{ nav.second_menu }}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'geography' %}">{{ nav.thierd_menu }}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'skills' %}">{{ nav.fourth_menu }}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'last_vacancies' %}">{{ nav.fifth_menu }}</a>
+                    </li>
+                </ul>
 
-	        <div class="footer">
-	        	<p>
-						  IRIT-RTF &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  This site was made <i class="icon-heart" aria-hidden="true"></i> by <a href="https://vk.com/parcurcik" target="_blank">Pavel Bezborodov</a>
-						  </p>
-                <p id="name" class="info">Павел Безбородов <br>АТ-23 РИ-210945</p>
-	        </div>
 
-	      </div>
-    	</nav>
+                <div class="footer">
+                    <p>
+                        {{ nav.all_rights|safe }}
+                    </p>
+                    <p id="name" class="info">{{ nav.author|safe }}</p>
+                </div>
 
-
-      <div id="content" class="p-4 p-md-5 pt-5">
-        {% for item in query_results %}
-          <h2 class="mb-4">Кто такой {{ item.title }}?</h2>
-           {{ item.content|safe }}
-
-            <img id="main_photo" src="{{item.photo.url}}"  alt="">
-          {% endfor %}
+            </div>
+        </nav>
+    {% endfor %}
 
 
-      </div>
-		</div>
+    <div id="content" class="p-4 p-md-5 pt-5">
+        {% for item in home_results %}
+            <h2 class="mb-4">{{ item.title }}</h2>
+            {{ item.content|safe }}
+            <div id="senya">
+                <img id="main_photo" src="{{ item.photo.url }}" alt="">
+                {{ item.photo_description|safe }}
+            </div>
+        {% endfor %}
 
-    <script src="static/js/jquery.min.js"></script>
-    <script src="static/js/popper.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/main.js"></script>
-  </body>
+
+    </div>
+</div>
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/popper.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/main.js"></script>
+</body>
 <footer>
 
 </footer>

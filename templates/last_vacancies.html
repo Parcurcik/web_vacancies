@@ -1,74 +1,78 @@
 <!doctype html>
 <html lang="ru">
 {% load static %}
-  <head>
-  	<title>Главная</title>
+<head>
+    <title>Главная</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} ">
 
 
+</head>
+<body id="bg" style="background-image: url('{% static "media/back.png" %}')" ;>
 
-  </head>
-  <body id="bg" style="background-image: url('{% static "media/back.png"%}')";>
-
-		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="custom-menu">
-        </div>
-				<div class="p-4 pt-5">
-                    <img class="notice" src="{% static 'media/notice.svg' %}"  alt="">
-
-
-	        <ul class="list-unstyled components mb-5">
-                    <a href="/"><img class="imgsize" src="{% static 'media/logo.png' %}"  alt=""></a>
-	          <li>
-	            <a href="/">Главная</a>
-	          </li>
-	          <li>
-	              <a href="{% url 'demand' %}">Востребованность</a>
-	          </li>
-	          <li>
-               <a href="{% url 'geography' %}">География</a>
-	          </li>
-	          <li>
-              <a href="{% url 'skills' %}">Навыки</a>
-	          </li>
-                <li class="active">
-             <a href="{% url 'last_vacancies' %}">Последние вакансии</a>
-	          </li>
-	        </ul>
+<div class="wrapper d-flex align-items-stretch">
+    {% for nav in navigation_results_last_vacancies %}
+        <nav id="sidebar">
+            <div class="custom-menu">
+            </div>
+            <div class="p-4 pt-5">
+                <img class="notice" src="{{ nav.title.url }}" alt="">
 
 
+                <ul class="list-unstyled components mb-5">
+                    <a href="/"><img class="imgsize" src="{{ nav.logo_field.url }}" alt=""></a>
+                    <li>
+                        <a href="/">{{ nav.first_menu }}</a></li>
+                    <li>
+                        <a href="{% url 'demand' %}">{{ nav.second_menu }}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'geography' %}">{{ nav.thierd_menu }}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'skills' %}">{{ nav.fourth_menu }}</a>
+                    </li>
+                    <li class="active">
+                        <a href="{% url 'last_vacancies' %}">{{ nav.fifth_menu }}</a>
+                    </li>
+                </ul>
 
-	        <div class="footer">
-	        	<p>
-						  IRIT-RTF &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  This site was made <i class="icon-heart" aria-hidden="true"></i> by <a href="https://vk.com/parcurcik" target="_blank">Pavel Bezborodov</a>
-						  </p>
-                <p id="name" class="info">Павел Безбородов <br>АТ-23 РИ-210945</p>
-	        </div>
 
-	      </div>
-    	</nav>
+                <div class="footer">
+                    <p>
+                        {{ nav.all_rights|safe }}
+                    </p>
+                    <p id="name" class="info">{{ nav.author|safe }}</p>
+                </div>
+
+            </div>
+        </nav>
+    {% endfor %}
 
 
-      <div id="content" class="p-4 p-md-5 pt-5">
+    <div id="content" class="p-4 p-md-5 pt-5">
 
         <h2 class="mb-4">Последние вакансии профессии Web-разработчика</h2>
+        <div id="take_vac">
+            <label id="info_user">Для получения выгурзки по вакансиям выберите необходимую дату</label>
+            <input id="input_date" type="date" min="2022-12-01" max="2022-12-31">
+            <button id="make_api">Получить выгрузку</button>
+        </div>
 
 
-      </div>
-		</div>
-    <script src="{% static  "js/jquery.min.js" %}"></script>
-    <script src="{% static  "js/popper.js" %}"></script>
-    <script src="{% static  "js/bootstrap.min.js" %}"></script>
-        <script src="{% static  "js/main.js" %}"></script>
+    </div>
+</div>
+<script src="{% static  "js/jquery.min.js" %}"></script>
+<script src="{% static  "js/popper.js" %}"></script>
+<script src="{% static  "js/bootstrap.min.js" %}"></script>
+<script src="{% static  "js/main.js" %}"></script>
 
-  </body>
+</body>
 <footer>
 
 </footer>

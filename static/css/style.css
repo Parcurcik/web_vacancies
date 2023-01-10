@@ -11658,6 +11658,7 @@ a[data-toggle="collapse"] {
 .footer p {
     color: rgba(255, 255, 255, 0.5);
     text-align: left;
+    margin-top: 200%;
 }
 
 .form-control {
@@ -11707,12 +11708,15 @@ a[data-toggle="collapse"] {
 #main_photo {
     width: 25%;
     height: 25%;
+    max-width: 25%;
+    max-height: 25%;
     display: block;
     border-radius: 20%;
     border: 2px solid #34ce57;
     display: flex;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: -3%;
+    float: right;
 
 }
 
@@ -11773,14 +11777,13 @@ a[data-toggle="collapse"] {
 }
 
 #senya {
-    margin-top: 80px;
-
+    margin-top: 50px;
 }
 
 
 #name {
     text-align: center;
-    margin-top: 400px;
+    margin-top: 35px;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -12070,18 +12073,134 @@ table.iksweb tr:hover td {
     cursor: default;
 }
 
+table.table_giography {
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+table.table_giography th {
+    font-weight: normal;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #34ce57;
+}
+
+table.table_giography td {
+    font-size: 13px;
+    color: #c9d0d4;
+}
+
+table.table_giography td, table.table_giography th {
+    white-space: pre-wrap;
+    padding: 10px 1px;
+    line-height: 6px;
+    vertical-align: middle;
+    border: 1px solid #34ce57;
+}
+
+table.table_giography tr:hover {
+    background-color: #c9d0d4
+}
+
+table.table_giography tr:hover td {
+    color: #000000;
+    cursor: default;
+}
+
 .mobile-table {
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
 }
 
-#graph{
+#graph {
     float: right;
-    margin-top: -18.7%;
-    width: 26%;
-    max-width: 26%;
-    height: 26%;
-    max-height: 26%;
+    margin-top: -18.55%;
+    width: 27%;
+    max-width: 27%;
+    height: 27%;
+    max-height: 27%;
     border: 5px solid #34ce57;
+    position: relative;
+}
+
+#diagramm {
+    margin-top: -22.2%;
+    margin-left: 60%;
+    width: 25%;
+    max-width: 25%;
+    height: 25%;
+    max-height: 25%;
+    border: 5px solid #34ce57;
+    position: relative;
+
+}
+
+#take_vac {
+    border-radius: 10%;
+    width: 20%;
+    height: 28%;
+    margin-left: 0%;
+    background: #34ce57;
+    aspect-ratio: 1 / 1;
+}
+
+#input_date {
+    margin-left: 35%;
+    margin-top: 3%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#info_user {
+    color: #ffffff;
+    font-family: ‘Verdana’, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 26px;
+    text-indent: 30px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#make_api {
+    margin-left: 20%;
+    margin-top: 10%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 25px;
+	outline: none;
+	border: 1px solid #000000;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+#make_api:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
+}
+#make_api:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+#make_api:active {
+	background-color: #808080;
 }
