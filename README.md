@@ -1,1 +1,1 @@
-# Project was made by FullStack developer Bezborodov Pavel. The course fo Python URFU.
+# Project was made by FullStack developer Bezborodov Pavel. The course of Python URFU.
