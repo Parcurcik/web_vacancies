@@ -31,9 +31,21 @@ class Geography(models.Model):
     main_title = models.CharField(max_length=255, blank=True, verbose_name='Заголовок страницы')
     first_title = models.CharField(max_length=255,blank=True, verbose_name='Заголовок первого блока')
     first_content = models.TextField(blank=True, verbose_name='Табличка для первого блока')
+    first_photo = models.ImageField(upload_to='photos/%Y/%m/%d', blank=False, verbose_name='Фото первое')
     second_title = models.CharField(max_length=255,blank=True, verbose_name='Заголовок второго блока')
     second_content = models.TextField(blank=True, verbose_name='Табличка для второго блока')
-    second_photo = models.ImageField(upload_to='photos/%Y/%m/%d', blank=False, verbose_name='Фото')
+    second_photo = models.ImageField(upload_to='photos/%Y/%m/%d', blank=False, verbose_name='Фото второе')
+
+class Skills(models.Model):
+    main_title = models.CharField(max_length=255, blank=True, verbose_name='Заголовок страницы')
+    first_title = models.CharField(max_length=255,blank=True, verbose_name='Заголовок блока')
+    first_content = models.TextField(blank=True, verbose_name='Табличка для блока')
+    first_photo = models.ImageField(upload_to='photos/%Y/%m/%d', blank=False, verbose_name='Фото')
+
+class LastVacancies(models.Model):
+    main_title = models.CharField(max_length=255, blank=True, verbose_name='Заголовок страницы')
+    content = models.TextField(blank=True, verbose_name='Текстовый блок')
+
 
 
 

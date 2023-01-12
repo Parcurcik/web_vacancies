@@ -7,14 +7,27 @@
     <list default="true" id="17ad5cb0-c0cf-4a59-be7c-3cab97f88e26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap/_media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap/mixins/_border-radius.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap/mixins/_screen-reader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap/mixins/_visibility.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap/utilities/_stretched-link.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/col.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/dia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/mainph.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/notice.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/salary.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/demand.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/demand.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/geography.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/geography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/last_vacancies.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/last_vacancies.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/skills.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/skills.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/migrations/0002_geography_alter_demand_first_content_and_more.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/views.py" afterDir="false" />
     </list>
@@ -30,8 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,7 +80,7 @@
       <recent name="C:\Projects\web_vacancies\static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.api">
+  <component name="RunManager" selected="Python.views">
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="web_vacancies" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,6 +95,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$USER_HOME$/OneDrive/Рабочий стол/analytics/api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="web_vacancies" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.views" />
         <item itemvalue="Python.api" />
       </list>
     </recent_temporary>
@@ -156,6 +192,19 @@
       <workItem from="1673356154271" duration="1055000" />
       <workItem from="1673359605030" duration="156000" />
       <workItem from="1673360317936" duration="10597000" />
+      <workItem from="1673414775774" duration="1282000" />
+      <workItem from="1673456227699" duration="2946000" />
+      <workItem from="1673462007600" duration="378000" />
+      <workItem from="1673465270215" duration="745000" />
+      <workItem from="1673467540374" duration="2026000" />
+      <workItem from="1673471089652" duration="1904000" />
+      <workItem from="1673473729822" duration="1203000" />
+      <workItem from="1673508568331" duration="992000" />
+      <workItem from="1673513535541" duration="461000" />
+      <workItem from="1673518585278" duration="388000" />
+      <workItem from="1673519130549" duration="4290000" />
+      <workItem from="1673525075948" duration="107000" />
+      <workItem from="1673530024096" duration="10340000" />
     </task>
     <servers />
   </component>
@@ -163,6 +212,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/web_vacancies$views.coverage" NAME="views Coverage Results" MODIFIED="1673538835059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
     <SUITE FILE_PATH="coverage/web_vacancies$api.coverage" NAME="api Coverage Results" MODIFIED="1673376951738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/OneDrive/Рабочий стол/analytics" />
   </component>
 </project>

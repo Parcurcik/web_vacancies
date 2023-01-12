@@ -2,7 +2,7 @@
 <html lang="ru">
 {% load static %}
 <head>
-    <title>Главная</title>
+    <title>География</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -43,7 +43,7 @@
                 </ul>
 
 
-                <div class="footer">
+                <div class="footer" style="margin-top: 380%">
                     <p>
                         {{ nav.all_rights|safe }}
                     </p>
@@ -61,6 +61,7 @@
         <h3>{{ item.first_title }}</h3>
         <div class="mobile-table">
             {{ item.first_content|safe }}
+            <img id="diagramm" src="{{ item.first_photo.url }}" alt="">
         </div>
         <h3>{{ item.second_title }}</h3>
         <div class="mobile-table">

@@ -2,7 +2,7 @@
 <html lang="ru">
 {% load static %}
 <head>
-    <title>Главная</title>
+    <title>Навыки</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -57,18 +57,28 @@
     {% endfor %}
 
 
+    {% for item in skills_results %}
+
     <div id="content" class="p-4 p-md-5 pt-5">
+            <h2 class="mb-4">{{ item.main_title }}</h2>
+        <h3 style="margin-top: 10%"; >{{ item.first_title }}</h3>
+        <div class="mobile-table">
+            {{ item.first_content|safe }}
+            <img id="graph" src="{{ item.first_photo.url }}" alt="" style="margin-top: -30%">
+        </div>
 
-        <h2 class="mb-4">Навыки профессии Web-разработчика</h2>
+
+{% endfor %}
 
 
+
+        </div>
     </div>
+    <script src="{% static  "js/jquery.min.js" %}"></script>
+    <script src="{% static  "js/popper.js" %}"></script>
+    <script src="{% static  "js/bootstrap.min.js" %}"></script>
+    <script src="{% static  "js/main.js" %}"></script>
 </div>
-<script src="{% static  "js/jquery.min.js" %}"></script>
-<script src="{% static  "js/popper.js" %}"></script>
-<script src="{% static  "js/bootstrap.min.js" %}"></script>
-<script src="{% static  "js/main.js" %}"></script>
-
 </body>
 <footer>
 

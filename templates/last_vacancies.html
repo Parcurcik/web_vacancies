@@ -2,7 +2,7 @@
 <html lang="ru">
 {% load static %}
 <head>
-    <title>Главная</title>
+    <title>Последние вакансии</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -43,7 +43,7 @@
                 </ul>
 
 
-                <div class="footer">
+                <div class="footer" style="margin-top: 1550%">
                     <p>
                         {{ nav.all_rights|safe }}
                     </p>
@@ -55,14 +55,28 @@
     {% endfor %}
 
 
-    <div id="content" class="p-4 p-md-5 pt-5">
+    {% for item in last_vacancies %}
 
-        <h2 class="mb-4">Последние вакансии профессии Web-разработчика</h2>
-        <div id="take_vac">
-            <label id="info_user">Для получения выгурзки по вакансиям выберите необходимую дату</label>
-            <input id="input_date" type="date" min="2022-12-01" max="2022-12-31">
-            <button id="make_api">Получить выгрузку</button>
-        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">{{ item.main_title }}</h2>
+        {% for i in vacs %}
+            <h3>{{ i.name }}</h3>
+            <p>Описание:</p>
+            <p> {{ i.description }}</p>
+            <p>Навыки:</p>
+            <p>{{ i.key_skills }}</p>
+            <p>Компания:</p>
+           <p>{{ i.employer }}</p>
+             <p>Зарплата:</p>
+            <p>{{ i.salary }}</p>
+            <p>{{ i.area }}</p>
+            <p>{{ i.published_at }}</p>
+            <p><a href="{{ i.alternate_url }}">Ссылка на вакансию</a></p>
+
+        {% endfor %}
+
+
+    {% endfor %}
 
 
     </div>
@@ -76,4 +90,4 @@
 <footer>
 
 </footer>
-</html>
+</html>'

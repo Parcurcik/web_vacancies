@@ -12111,28 +12111,68 @@ table.table_giography tr:hover td {
     cursor: default;
 }
 
+
 .mobile-table {
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
 }
 
+table.table_skills {
+    text-decoration: none;
+    border-collapse: collapse;
+    width: 60%;
+    max-width: 60%;
+    text-align: center;
+    margin-top: 1%;
+}
+
+table.table_skills th {
+    font-weight: normal;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #34ce57;
+}
+
+table.table_skills td {
+    font-size: 13px;
+    color: #c9d0d4;
+}
+
+table.table_skills td, table.table_skills th {
+    white-space: pre-wrap;
+    padding: 20px 1px;
+    line-height: 6px;
+    vertical-align: middle;
+    border: 1px solid #34ce57;
+}
+
+table.table_skills tr:hover {
+    background-color: #c9d0d4
+}
+
+table.table_skills tr:hover td {
+    color: #000000;
+    cursor: default;
+}
+
 #graph {
     float: right;
-    margin-top: -18.55%;
-    width: 27%;
-    max-width: 27%;
-    height: 27%;
-    max-height: 27%;
+    margin-top: -34%;
+    width: 38%;
+    max-width: 45%;
+    height: 60%;
+    max-height: 45%;
     border: 5px solid #34ce57;
     position: relative;
+
 }
 
 #diagramm {
-    margin-top: -22.2%;
-    margin-left: 60%;
-    width: 25%;
-    max-width: 25%;
+    margin-top: -32%;
+    margin-left: 55%;
+    width: 35%;
+    max-width: 35%;
     height: 25%;
     max-height: 25%;
     border: 5px solid #34ce57;
@@ -12203,4 +12243,12 @@ table.table_giography tr:hover td {
 }
 #make_api:active {
 	background-color: #808080;
+}
+
+#name_of p{
+    color: #c9d0d4;
+    font-family: ‘Helvetica Neue’, sans-serif;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
 }
